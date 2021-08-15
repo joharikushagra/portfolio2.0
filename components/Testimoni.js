@@ -6,44 +6,49 @@ import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
+import Link from "next/link";
 
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "IIITU Result Portal",
+      image: "/assets/p2.JPG",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "A prototype for our institute's result portal built on MERN stack with user friendly UI and optimized performance",
+        link: "https://github.com/joharikushagra/results-portal-iiitu"
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "WhatsApp Rooms",
+      image: "/assets/p1.JPG",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "A chat app like discord/slack rooms, inspired from whatsapp web, built on React and Firebase and Google Auth.",
+      link: "https://github.com/joharikushagra/my-chat"
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "Shortlyy",
+      image: "/assets/p3.JPG",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Url Shortener app built on ReactJs",
+      link: "https://github.com/joharikushagra/shortly"
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "Bloggy",
+      image: "/assets/p4.JPG",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Frontend only prototype of blog website, built with React and Redux for store management.",
+        link: "https://github.com/joharikushagra/bloggy"
     },
   ],
 }) => {
@@ -96,27 +101,20 @@ const Testimoni = ({
                 <div className="flex order-2 xl:order-1">
                   <Image
                     src={listTestimonis.image}
-                    height={50}
-                    width={50}
+                    height={200}
+                    width={300}
                     alt="Icon People"
                   />
-                  <div className="flex flex-col ml-5 text-left">
-                    <p className="text-lg text-black-600 capitalize">
-                      {listTestimonis.name}
-                    </p>
-                    <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
-                    </p>
-                  </div>
+                  {/* <div className="flex flex-col ml-5 text-center">
+                  </div> */}
                 </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  <p className="text-sm">{listTestimonis.rating}</p>
-                  <span className="flex ml-4">
-                    <Stars className="h-4 w-4" />
-                  </span>
-                </div>
+                {/* <div className="flex flex-none items-center ml-auto order-1 xl:order-2"></div> */}
               </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
+              <p className="text-lg text-black-600 mt-10 capitalize">
+                {listTestimonis.name}
+              </p>
+              <p className="mt-5 text-left">{listTestimonis.testimoni}</p>
+              <p style={{color:'rgba(245, 56, 85, var(--tw-bg-opacity)'}}><Link href={`${listTestimonis.link}`} target="_blank">GitHub</Link></p>
             </div>
           </div>
         ))}

@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>VPN Best Landingpage </title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Kushagra_Johari</title>
+        <link rel="icon" href="/vercel.svg"/>
       </Head>
       <Layout>
         <Hero />

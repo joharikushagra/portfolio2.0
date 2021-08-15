@@ -1,0 +1,9 @@
+.icons{
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+}
+.icons:hover{
+    cursor:pointer;
+    transition: .4s;
+    transform: scale3d(.9,.9,.9);
+}
