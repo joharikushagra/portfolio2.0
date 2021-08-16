@@ -41,6 +41,16 @@ const Testimoni = ({
       link: "https://github.com/joharikushagra/shortly"
     },
     {
+      name: "Meta Scrapper",
+      image: "/assets/p5.JPG",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "A light weight meta-data scrapper built on Node.Js enables you to collect data by entering Url",
+        link: "https://www.npmjs.com/package/metadata-scrapper"
+    },
+    {
       name: "Bloggy",
       image: "/assets/p4.JPG",
       city: "Warsaw",
@@ -114,7 +124,13 @@ const Testimoni = ({
                 {listTestimonis.name}
               </p>
               <p className="mt-5 text-left">{listTestimonis.testimoni}</p>
-              <p style={{color:'rgba(245, 56, 85, var(--tw-bg-opacity)'}}><Link href={`${listTestimonis.link}`} target="_blank">GitHub</Link></p>
+              {
+                index==3 ? (
+              <p style={{color:'rgba(245, 56, 85, var(--tw-bg-opacity)'}}><Link href={`${listTestimonis.link}`} target="_blank">Visit Npmjs</Link></p>
+                ) : (
+              <p style={{color:'rgba(245, 56, 85, var(--tw-bg-opacity)'}}><Link href={`${listTestimonis.link}`} target="_blank">Github</Link></p>
+                )
+              }
             </div>
           </div>
         ))}
