@@ -76,12 +76,12 @@ const Achievements = ({
               key={index}
               className="flex md:justify-evenly md:align-center md:flex-row flex-col text-left items-center transition-all"
             >
-              <div className="p-5 w-1/2 md:w-full">
+              <div className="p-5 md:w-full">
                 <p className="text-center">
                   <strong>{data.name}</strong>
                 </p>
               </div>
-              <div className="p-5 w-1/2 md:w-full">
+              <div className="p-5 md:w-full text-center">
                 <p>{data.testimoni}</p>
                 {index == 0 ? (
                   <p
