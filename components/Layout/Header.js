@@ -9,7 +9,7 @@ const Header = () => {
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY)
+      // console.log(window.scrollY)
       setScrollActive(window.scrollY > 20);
     });
   }, []);
