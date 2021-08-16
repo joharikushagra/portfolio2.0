@@ -8,23 +8,25 @@ import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 import Link from "next/link";
 
-const Achievements = ({
+const WorkExperience = ({
   listTestimoni = [
     {
-      name: "CodeChef - (4 Star, Max Rating: 1871)",
-      testimoni: "Achieved Global Rank of 114 in December Long Challenge 2020",
+      name: "GirlScript Summer of Code",
+      image: "/assets/p2.JPG",
+      testimoni: "Open Source Contributor",
+      timeline: "Aug 2020 - Nov 2020",
     },
     {
-      name: "Codeforces - (Max Rating: 1164)",
-      testimoni: "Achieved my best rank 3889 in CodeForces Round 678 div 2",
+      name: "FirstAd Pvt. Ltd.",
+      image: "/assets/p1.JPG",
+      testimoni: "Web Developer Intern (JS,React.Js)",
+      timeline: "Dec 2020 - April 2021",
     },
     {
-      name: "Google HashCode 2021",
-      testimoni: "Achieved AIR 602 by our team Code_It_Out",
-    },
-    {
-      name: "Google KickStart",
-      testimoni: "Achieved global Rank of 2388 in Round D of KickStart 2021",
+      name: "The Solar Labs",
+      image: "/assets/p3.JPG",
+      testimoni: "Software Development Intern",
+      timeline: "July 2021 - Present",
     },
   ],
 }) => {
@@ -70,48 +72,19 @@ const Achievements = ({
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
-        {listTestimoni.map((data, index) => {
-          return (
-            <div
-              key={index}
-              className="flex md:justify-evenly md:align-center md:flex-row flex-col text-left items-center transition-all"
-            >
-              <div className="p-5 w-1/2 md:w-full">
-                <p className="text-center">
-                  <strong>{data.name}</strong>
-                </p>
-              </div>
-              <div className="p-5 w-1/2 md:w-full">
-                <p>{data.testimoni}</p>
-                {index == 0 ? (
-                  <p
-                    style={{ color: "rgba(245, 56, 85, var(--tw-bg-opacity))" }}
-                  >
-                    <Link href="https://www.codechef.com/users/alcatraz2001">
-                      Visit Profile
-                    </Link>
-                  </p>
-                ) : index == 1 ? (
-                  <p
-                    style={{ color: "rgba(245, 56, 85, var(--tw-bg-opacity))" }}
-                  >
-                    <Link
-                      href="https://codeforces.com/profile/alcatraz2001"
-                      style={{
-                        color: "rgba(245, 56, 85, var(--tw-bg-opacity))",
-                      }}
-                    >
-                      Visit Profile
-                    </Link>
-                  </p>
-                ) : (
-                  ""
-                )}
-              </div>
-              <div className="p-5 w-1/2 md:w-full"></div>
+        {listTestimoni.map((listTestimonis, index) => (
+          <div className="px-3 flex items-stretch" key={index}>
+            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+              <p className="text-lg text-black-600 mt-10 capitalize">
+                {listTestimonis.name}
+              </p>
+              <p className="mt-5 text-center">{listTestimonis.testimoni}</p>
+              <p style={{ color: "rgba(245, 56, 85, var(--tw-bg-opacity)" }}>
+                {listTestimonis.timeline}
+              </p>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </Slider>
       <div className="flex w-full items-center justify-end">
         <div className="flex flex-none justify-between w-auto mt-14">
@@ -133,4 +106,4 @@ const Achievements = ({
   );
 };
 
-export default Achievements;
+export default WorkExperience;

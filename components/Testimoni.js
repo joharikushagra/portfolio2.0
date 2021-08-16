@@ -37,7 +37,7 @@ const Testimoni = ({
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Url Shortener app built on ReactJs",
+        "Url Shortener app built on ReactJs which makes your work of trimming urls extremely easy",
       link: "https://github.com/joharikushagra/shortly"
     },
     {

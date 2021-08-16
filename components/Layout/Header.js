@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
@@ -10,6 +9,7 @@ const Header = () => {
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      console.log(window.scrollY)
       setScrollActive(window.scrollY > 20);
     });
   }, []);
@@ -100,15 +100,25 @@ const Header = () => {
             >
               Achievements
             </LinkScroll>
+            <LinkScroll
+              activeClass="active"
+              to="workexperience"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("workexperience");
+              }}
+              className={
+                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                (activeLink === "workexperience"
+                  ? " text-orange-500 animation-active "
+                  : " text-black-500 hover:text-orange-500 ")
+              }
+            >
+              Work Experience
+            </LinkScroll>
           </ul>
-          {/* <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
-          </div> */}
         </nav>
       </header>
       {/* Mobile Navigation */}
