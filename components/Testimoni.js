@@ -31,6 +31,16 @@ const Testimoni = ({
       link: "https://github.com/joharikushagra/results-portal-iiitu",
     },
     {
+      name: "Inshorts Mini",
+      image: "/assets/p6.JPEG",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "Inshorts mini version built on react native, keeps you updated with the events in surroundings.",
+      link: "https://github.com/joharikushagra/Inshorts-mini",
+    },
+    {
       name: "WhatsApp Rooms",
       image: "/assets/p1.JPG",
       city: "Warsaw",
@@ -121,7 +131,7 @@ const Testimoni = ({
                 <div className="flex order-2 xl:order-1">
                   <Image
                     src={listTestimonis.image}
-                    height={200}
+                    height={300}
                     width={300}
                     alt="Icon People"
                   />
