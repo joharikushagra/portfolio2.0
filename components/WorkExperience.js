@@ -11,22 +11,34 @@ import Link from "next/link";
 const WorkExperience = ({
   listTestimoni = [
     {
-      name: "GirlScript Summer of Code",
-      image: "/assets/p2.JPG",
-      testimoni: "Open Source Contributor",
-      timeline: "Aug 2020 - Nov 2020",
+      name: "Dukaan",
+      image: "/assets/dukaan.jfif",
+      testimoni: "Software Development Intern",
+      timeline: "April 2022 - June 2022",
+    },
+    {
+      name: "Conwo Solutions",
+      image: "/assets/conwo.jfif",
+      testimoni: "Software Development Intern",
+      timeline: "Jan 2022 - April 2022",
+    },
+    {
+      name: "The Solar Labs",
+      image: "/assets/tsl.jfif",
+      testimoni: "Software Development Intern",
+      timeline: "July 2021 - Oct 2021",
     },
     {
       name: "FirstAd Pvt. Ltd.",
-      image: "/assets/p1.JPG",
+      image: "/assets/firstad.jfif",
       testimoni: "Web Developer Intern (JS,React.Js)",
       timeline: "Dec 2020 - April 2021",
     },
     {
-      name: "The Solar Labs",
-      image: "/assets/p3.JPG",
-      testimoni: "Software Development Intern",
-      timeline: "July 2021 - Present",
+      name: "GirlScript Summer of Code",
+      image: "/assets/gssoc.jfif",
+      testimoni: "Open Source Contributor",
+      timeline: "Aug 2020 - Nov 2020",
     },
   ],
 }) => {
@@ -75,6 +87,12 @@ const WorkExperience = ({
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+              <Image
+                src={listTestimonis.image}
+                height={300}
+                width={150}
+                alt="Icon People"
+              />
               <p className="text-lg text-black-600 mt-10 capitalize">
                 {listTestimonis.name}
               </p>

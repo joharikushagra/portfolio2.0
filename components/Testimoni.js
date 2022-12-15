@@ -11,6 +11,16 @@ import Link from "next/link";
 const Testimoni = ({
   listTestimoni = [
     {
+      name: "WhatsApp P2P",
+      image: "/assets/p1.JPG",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "A P2P whatsapp chat app with read-recipts, built on React and Firebase and Google Auth.",
+      link: "https://github.com/joharikushagra/wap2",
+    },
+    {
       name: "IIITU Result Portal",
       image: "/assets/p2.JPG",
       city: "Warsaw",
@@ -18,7 +28,7 @@ const Testimoni = ({
       rating: "4.5",
       testimoni:
         "A prototype for our institute's result portal built on MERN stack with user friendly UI and optimized performance",
-        link: "https://github.com/joharikushagra/results-portal-iiitu"
+      link: "https://github.com/joharikushagra/results-portal-iiitu",
     },
     {
       name: "WhatsApp Rooms",
@@ -28,7 +38,7 @@ const Testimoni = ({
       rating: "4.5",
       testimoni:
         "A chat app like discord/slack rooms, inspired from whatsapp web, built on React and Firebase and Google Auth.",
-      link: "https://github.com/joharikushagra/my-chat"
+      link: "https://github.com/joharikushagra/my-chat",
     },
     {
       name: "Shortlyy",
@@ -38,7 +48,7 @@ const Testimoni = ({
       rating: "4.5",
       testimoni:
         "Url Shortener app built on ReactJs which makes your work of trimming urls extremely easy",
-      link: "https://github.com/joharikushagra/shortly"
+      link: "https://github.com/joharikushagra/shortly",
     },
     {
       name: "Meta Scrapper",
@@ -48,18 +58,18 @@ const Testimoni = ({
       rating: "4.5",
       testimoni:
         "A light weight meta-data scrapper built on Node.Js enables you to collect data by entering Url",
-        link: "https://www.npmjs.com/package/metadata-scrapper"
+      link: "https://www.npmjs.com/package/metadata-scrapper",
     },
-    {
-      name: "Bloggy",
-      image: "/assets/p4.JPG",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Frontend only prototype of blog website, built with React and Redux for store management.",
-        link: "https://github.com/joharikushagra/bloggy"
-    },
+    // {
+    //   name: "Bloggy",
+    //   image: "/assets/p4.JPG",
+    //   city: "Warsaw",
+    //   country: "Poland",
+    //   rating: "4.5",
+    //   testimoni:
+    //     "Frontend only prototype of blog website, built with React and Redux for store management.",
+    //     link: "https://github.com/joharikushagra/bloggy"
+    // },
   ],
 }) => {
   const settings = {
@@ -124,13 +134,19 @@ const Testimoni = ({
                 {listTestimonis.name}
               </p>
               <p className="mt-5 text-left">{listTestimonis.testimoni}</p>
-              {
-                index==3 ? (
-              <p style={{color:'rgba(245, 56, 85, var(--tw-bg-opacity)'}}><Link href={`${listTestimonis.link}`} target="_blank">Visit Npmjs</Link></p>
-                ) : (
-              <p style={{color:'rgba(245, 56, 85, var(--tw-bg-opacity)'}}><Link href={`${listTestimonis.link}`} target="_blank">Github</Link></p>
-                )
-              }
+              {index == 3 ? (
+                <p style={{ color: "rgba(245, 56, 85, var(--tw-bg-opacity)" }}>
+                  <Link href={`${listTestimonis.link}`} target="_blank">
+                    Visit Npmjs
+                  </Link>
+                </p>
+              ) : (
+                <p style={{ color: "rgba(245, 56, 85, var(--tw-bg-opacity)" }}>
+                  <Link href={`${listTestimonis.link}`} target="_blank">
+                    Github
+                  </Link>
+                </p>
+              )}
             </div>
           </div>
         ))}
