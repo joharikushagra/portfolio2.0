@@ -32,7 +32,7 @@ const Testimoni = ({
     },
     {
       name: "Inshorts Mini",
-      image: "/assets/p6.JPEG",
+      image: "/assets/p6.JPG",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
