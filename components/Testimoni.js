@@ -30,16 +30,7 @@ const Testimoni = ({
         "A prototype for our institute's result portal built on MERN stack with user friendly UI and optimized performance",
       link: "https://github.com/joharikushagra/results-portal-iiitu",
     },
-    {
-      name: "Inshorts Mini",
-      image: "/assets/p6.JPG",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Inshorts mini version built on react native, keeps you updated with the events in surroundings.",
-      link: "https://github.com/joharikushagra/Inshorts-mini",
-    },
+
     {
       name: "WhatsApp Rooms",
       image: "/assets/p1.JPG",
@@ -69,6 +60,16 @@ const Testimoni = ({
       testimoni:
         "A light weight meta-data scrapper built on Node.Js enables you to collect data by entering Url",
       link: "https://www.npmjs.com/package/metadata-scrapper",
+    },
+    {
+      name: "Inshorts Mini",
+      image: "/assets/p6.JPG",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "Inshorts mini version built on react native, keeps you updated with the events in surroundings.",
+      link: "https://github.com/joharikushagra/Inshorts-mini",
     },
     // {
     //   name: "Bloggy",
