@@ -11,6 +11,26 @@ import Link from "next/link";
 const Testimoni = ({
   listTestimoni = [
     {
+      name: "MGUi",
+      image: "/assets/pp.png",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+      "Custom UI library prototype",
+      link: "https://mgui.netlify.app",
+    }, 
+    {
+      name: "Custom Chip Component",
+      image: "/assets/p1.JPG",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "Custom UI component prototype in React",
+      link: "https://glittering-cajeta-6c46f1.netlify.app/",
+    }, 
+    {
       name: "WhatsApp P2P",
       image: "/assets/p1.JPG",
       city: "Warsaw",
@@ -19,7 +39,7 @@ const Testimoni = ({
       testimoni:
         "A P2P whatsapp chat app with read-recipts, built on React and Firebase and Google Auth.",
       link: "https://github.com/joharikushagra/wap2",
-    },
+    }, 
     {
       name: "IIITU Result Portal",
       image: "/assets/p2.JPG",

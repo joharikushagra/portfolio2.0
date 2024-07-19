@@ -11,6 +11,18 @@ import Link from "next/link";
 const WorkExperience = ({
   listTestimoni = [
     {
+      name: "Octro",
+      image: "https://www.octro.com/img/who-we-are.png",
+      testimoni: "Member of Technical Staff",
+      timeline: "Mar 2024 - July 2024",
+    },
+    {
+      name: "Bungee Tech",
+      image: "https://media.licdn.com/dms/image/C4E0BAQGq-rvz-giAPQ/company-logo_200_200/0/1630586855676/bungeetech_logo?e=2147483647&v=beta&t=u8OSfjQnhS4ifvNPRJPfefVYEpv6Plvpw9oxycWGDYE",
+      testimoni: "Software Engineer",
+      timeline: "June 2023 - Dec 2023",
+    },
+    {
       name: "Dukaan",
       image: "/assets/dukaan.jfif",
       testimoni: "Software Development Intern",
